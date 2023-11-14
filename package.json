@@ -1,8 +1,17 @@
 {
 "name": "semantic_testing1-v1.0.0",
-"version": "1.0.0-development",
-"repository": "https://github.com/P1989singh/Semantic_Testing1",
-"main": "blank.yml",
+"version": "1.0.0",
+"description": "This repository accompanies Semantic_Testing how to create automate database release in actions.",
+"main": "index.js",
+"scripts": {
+  "build": "node esbuild.cjs",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+"repository":{
+  "type": "git",
+  "url" : "git+https://github.com/P1989singh/Semantic_Testing1.git"
+},
+"author": "",
 "release": {
   "branches": ["main"],
   "plugins": [
