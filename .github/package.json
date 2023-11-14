@@ -1,37 +1,44 @@
 {
   "name": "semantic_testing1-v1.0.0",
-"version": "1.0.0",
-"description": "This repository accompanies Semantic_Testing how to create automate database release in actions.",
-"main": "index.js",
-"scripts": {
-  "build": "chmod +x ./.github/esbuild.cjs",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
-"repository":{
-  "type": "git",
-  "url" : "git+https://github.com/P1989singh/Semantic_Testing1.git"
-},
-"author": "",
-"release": {
-  "branches": ["main"],
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    ["@semantic-release/git",{
-      "assets": ["dist/*.js"],
-      "message": "chore(release): ${nextRelease.version} [skip.ci]\n\n${nextRelease.notes}"
-  }],
-    "@semantic-release/github"
-  ],
-  "devDependencies": {
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "github:semantic-release/commit-analyzer",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.2.3",
-    "@semantic-release/release-notes-generator": "github:semantic-release/release-notes-generator",
-    "semantic-release": "^18.0.1",
-    "esbuild": "0.15.11"
+  "version": "1.0.0",
+  "description": "This repository accompanies Semantic_Testing how to create automate database release in actions.",
+  "main": "index.js",
+  "scripts": {
+    "build": "chmod +x ./.github/esbuild.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P1989singh/Semantic_Testing1.git"
+  },
+  "author": "",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/*.js"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip.ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ],
+    "devDependencies": {
+      "@semantic-release/changelog": "^6.0.3",
+      "@semantic-release/commit-analyzer": "github:semantic-release/commit-analyzer",
+      "@semantic-release/git": "^10.0.1",
+      "@semantic-release/github": "^9.2.3",
+      "@semantic-release/release-notes-generator": "github:semantic-release/release-notes-generator",
+      "semantic-release": "^22.0.7",
+      "esbuild": "0.15.11"
+    }
   }
-}
 }
