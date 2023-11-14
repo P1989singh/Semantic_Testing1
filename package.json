@@ -4,7 +4,7 @@
 "description": "This repository accompanies Semantic_Testing how to create automate database release in actions.",
 "main": "index.js",
 "scripts": {
-  "build": "node esbuild.cjs",
+  "build": "esbuild.cjs",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
 "repository":{
